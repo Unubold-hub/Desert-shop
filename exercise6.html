@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+    }
+     body{
+        display:grid;
+        grid-template-columns: 100px 100px 100px;
+        gap: 30px;
+    }
+
+    @media only screen and (max-width:600px) {
+        body{
+            gap: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        body{
+            grid-template-columns: 100px;
+        }
+    }
+</style>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+
+</html>
